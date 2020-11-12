@@ -13,4 +13,8 @@ class VideoPlayController extends Controller
         $title = DB::table('video_lists')->get();
         return view('pages.index',compact('user' , 'title')) ;
     }
+    public function logout(){
+        Auth ::logout();
+        return redirect('/');
+    }
 }

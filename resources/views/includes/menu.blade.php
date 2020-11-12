@@ -25,21 +25,32 @@
                 @endif
             @endif
         @endif
-        
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('oil_doit')}}">油價</a>
+        </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            發票
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="{{route('10907')}}">109年07、08月中獎號碼</a>
+            <a class="dropdown-item" href="{{route('10905')}}">109年05、06月中獎號碼</a>
+            <a class="dropdown-item" href="{{route('10903')}}">109年03、04月中獎號碼</a>
+            <a class="dropdown-item" href="{{route('10901')}}">109年01、02月中獎號碼</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
+
+        {{-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            油價
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{route('oil_doit')}}">本周油價</a>
+            <a class="dropdown-item" href="#">過去油價</a>
+          </div>
+        </li> --}}
       </ul>
     </div>
 </nav>
