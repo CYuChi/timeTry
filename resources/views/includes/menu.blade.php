@@ -42,6 +42,18 @@
           </div>
         </li>
 
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('today')}}">天氣</a>
+        </li>
+        {{-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            天氣
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{route('today')}}">今日天氣預測</a>
+            <a class="dropdown-item" href="{{route('week')}}">一周天氣預測</a>
+          </div>
+        </li> --}}
         {{-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             油價

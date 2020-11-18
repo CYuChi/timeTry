@@ -3,6 +3,7 @@
 use App\Http\Controllers\VideoPlayController;
 use App\Http\Controllers\invoice_controller;
 use App\Http\Controllers\oil_controller;
+use App\Http\Controllers\weather_controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +28,9 @@ Route::get('/invoice/10901', [invoice_controller::class, 'invoice_show_01'])->na
 Route::get('/invoice/10903', [invoice_controller::class, 'invoice_show_03'])->name('10903');
 Route::get('/invoice/10905', [invoice_controller::class, 'invoice_show_05'])->name('10905');
 Route::get('/invoice/10907', [invoice_controller::class, 'invoice_show_07'])->name('10907');
+
+Route::get('/weather/today', [weather_controller::class, 'weather_show_today'])->name('today');
+Route::get('/weather/week', [weather_controller::class, 'weather_show_week'])->name('week');
 
 Route::get('/oil', [oil_controller::class, 'oil_show'])->name('oil_doit');
 

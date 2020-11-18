@@ -5,16 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+
 class VideoPlayController extends Controller
 {
     //
-    public function index(){
+    public function index()
+    {
         $user = Auth::user();
         $title = DB::table('video_lists')->get();
-        return view('pages.index',compact('user' , 'title')) ;
+        return view('pages.index', compact('user', 'title'));
     }
-    public function logout(){
-        Auth ::logout();
+    public function logout()
+    {
+        Auth::logout();
         return redirect('/');
     }
 }

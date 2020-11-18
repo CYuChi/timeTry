@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //set whatever level you want
+        error_reporting(E_ALL ^ E_NOTICE);
     }
 }
